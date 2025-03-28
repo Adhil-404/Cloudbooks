@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../Assets/Styles/AdminLogin.css'
-import '../../Assets/Images/Logo.png'
+
 
 
 
@@ -13,7 +13,7 @@ function AdminLogin() {
       <div class="login-card">
         <div class="left_container">
           <div class="logo">
-            <img src='./Logo.png' />
+
           </div>
           <h2>Welcome to</h2>
           <h1>CloudBooks</h1>
