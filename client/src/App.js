@@ -7,21 +7,28 @@ import AdminForgetpassword from './Components/Admin/AdminForgetpassword';
 import AdminResetpassword from './Components/Admin/AdminResetpassword';
 import AdminRegistration from './Components/Admin/AdminRegistration';
 import AdminDashboard from './Components/Admin/AdminDashboard';
+import UserDashboard from './Components/User/UserDashboard';
 
 
 function App() {
   return (
     <div className="App">
 
-     {/* <AdminLogin/> */}
-     <UserLogin/>
-     <UserRegistration/>
+     
+     {/* <UserLogin/> */}
+     {/* <UserRegistration/> */}
+     <UserDashboard/>
 
-     <AdminLogin/>
-     <AdminForgetpassword/>
-     <AdminResetpassword/>
-     <AdminRegistration/>
-     <AdminDashboard/>
+     {/* <AdminLogin/> */}
+     {/* <UserLogin/> */}
+     {/* <UserRegistration/> */}
+
+     {/* <AdminLogin/> */}
+     {/* <AdminForgetpassword/> */}
+     {/* <AdminResetpassword/> */}
+     {/* <AdminRegistration/>  */}
+     {/* <AdminDashboard/>  */}
+     
 
     </div>
   );

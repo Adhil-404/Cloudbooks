@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import "../../Assets/Styles/UserRegistration.css"
-import '../../Assets/Images/Logo.png'
+import "../../Assets/Styles/Userstyles/UserRegistration.css"
+
 
 function UserRegistration() {
   const [formData, setFormData] = useState({
@@ -29,9 +29,6 @@ function UserRegistration() {
     <div>
        <div className="signup-container">
       <div className="signup-card">
-        <div className="logo">
-          <img src="Logo.png" alt="CloudBooks Logo" />
-        </div>
         <h2>Create Your CloudBooks Account</h2>
         <form onSubmit={handleSubmit}>
           <div className="input-group">
@@ -39,7 +36,7 @@ function UserRegistration() {
             <input
               type="text"
               name="fullName"
-              placeholder="John Doe"
+              placeholder="Enter your full name"
               value={formData.fullName}
               onChange={handleChange}
               required

@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -23,15 +23,14 @@
   overflow: hidden;
 }
 
-.left_container, .right_container {
+.left_container,
+.right_container {
   flex: 1;
   padding: 40px;
 }
 
 .left_container {
-    background: linear-gradient(135deg, #3a8dde, #6fb1fc, #a3cfff);
-
-
+  background: linear-gradient(135deg,  #3a8dde, #6fb1fc, #a3cfff);
   color: white;
   display: flex;
   flex-direction: column;
@@ -43,6 +42,10 @@
 .logo img {
   width: 100px;
   margin-bottom: 10px;
+}
+
+.h2{
+  color: white;
 }
 
 .left h1 {
@@ -97,35 +100,23 @@
 
 .options a {
   text-decoration: none;
-  color:  #3a8dde;
+  color: #3a8dde;
   font-weight: bold;
 }
 
 .btn {
   width: 100%;
   padding: 10px;
-  background:  #3a8dde  ; 
+  background: #3a8dde;
   border: none;
   color: white;
   font-size: 1rem;
   border-radius: 5px;
-  cursor:pointer;
+  cursor: pointer;
   transition: 0.3s;
 }
 
 .btn:hover {
-  background: #660a61; 
+  background: #3a8dde;
   color: #ccc;
-}
-.signup p:hover {
-    color: blueviolet;
-    
-    
-    
-}
-.sign-link{
-    margin-left:5.7rem;
-}
-.signup{
-    margin-top: 8px;
 }
