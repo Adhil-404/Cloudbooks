@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import '../../Assets/Styles/UserLogin.css'
+import '../../Assets/Styles/Userstyles/UserLogin.css'
 
 function UserLogin() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [remember, setRemember] = useState(false);
+
 
 
   const handleSubmit=(e)=>{
@@ -15,9 +15,7 @@ function UserLogin() {
     <div className="container">
       <div className="login-card">
         <div className="left_container">
-          <div className="logo">
-            <img src='logo.png' />
-          </div>
+          
           <h2>Welcome to</h2>
           <h1>CloudBooks</h1>
           <p>

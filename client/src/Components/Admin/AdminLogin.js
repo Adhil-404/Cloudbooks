@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Assets/Styles/AdminLogin.css'
+import '../../Assets/Styles/Adminstyles/AdminLogin.css'
 
 
 
@@ -48,7 +48,12 @@ function AdminLogin() {
               <a href="#">Forgot password?</a>
             </div>
             <button type="submit" class="btn">Sign In</button>
+            <div className="signup">
+              <p>Don't have an account? <a href="#" className="sign-link">Sign up</a></p>
+            </div>
+         
           </form>
+
         </div>
       </div>
     </div>

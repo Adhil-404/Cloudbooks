@@ -1,11 +1,11 @@
 import React from 'react'
-import '../../Assets/Styles/AdminResetpassword.css'
+import '../../Assets/Styles/Adminstyles/AdminResetpassword.css'
 
 function AdminResetpassword() {
   return (
 
         <div className="container">
-      <div className="card">
+      <div className="reset-card">
         <h2 className="title">Reset Password</h2>
         <form>
           <div className="input-group">

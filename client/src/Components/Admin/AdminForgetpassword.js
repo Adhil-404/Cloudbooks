@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Assets/Styles/AdminForgetpassword.css'
+import '../../Assets/Styles/Adminstyles/AdminForgetpassword.css'
 
 function AdminForgetpassword() {
   return (
@@ -8,7 +8,7 @@ function AdminForgetpassword() {
 
 
     <div className="container">
-      <div className="card">
+      <div className="forget-card">
         <h2 className="title">Forgot Password</h2>
         <form>
           <div className="input-group">
