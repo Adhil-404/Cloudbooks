@@ -1,7 +1,7 @@
 import React from 'react'
-import '../../Assets/Styles/Adminstyles/AdminForgetpassword.css'
+import '../../Assets/Styles/Userstyles/UserForgetpassword.css'
 
-function AdminForgetpassword() {
+function UserForgetpassword() {
   return (
     <div>
       
@@ -31,4 +31,4 @@ function AdminForgetpassword() {
   )
 }
 
-export default AdminForgetpassword
+export default UserForgetpassword
