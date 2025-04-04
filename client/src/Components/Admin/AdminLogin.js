@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../Assets/Styles/Adminstyles/AdminLogin.css'
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -41,17 +42,8 @@ function AdminLogin() {
                 required
               />
             </div>
-            <div class="options">
-              <label>
-                <input type="checkbox" /> Remember me
-              </label>
-              <a href="#">Forgot password?</a>
-            </div>
             <button type="submit" class="btn">Sign In</button>
-            <div className="signup">
-              <p>Don't have an account? <a href="#" className="sign-link">Sign up</a></p>
-            </div>
-         
+
           </form>
 
         </div>

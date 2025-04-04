@@ -1,8 +1,12 @@
 import React from 'react'
 import '../../Assets/Styles/Userstyles/UserForgetpassword.css'
+import { Link } from 'react-router-dom'
 
 function UserForgetpassword() {
+  
+  
   return (
+    
     <div>
       
 
@@ -19,9 +23,9 @@ function UserForgetpassword() {
               className="input"
             />
           </div>
-          <button type="submit" className="button">
+           < Link to={'/user/restpassword'}> <button type="submit" className="button">
             Reset Password
-          </button>
+          </button></Link>
         </form>
       </div>
     </div>

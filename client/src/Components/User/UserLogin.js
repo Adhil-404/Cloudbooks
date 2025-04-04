@@ -1,21 +1,27 @@
 import React, { useState } from 'react'
 import '../../Assets/Styles/Userstyles/UserLogin.css'
+import { Link, useNavigate } from 'react-router-dom';
 
 function UserLogin() {
+
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
 
 
-  const handleSubmit=(e)=>{
+  const handleSubmit = (e) => {
     e.preventDefault();
+ navigate('/user/dashboard')
   }
+
+ 
 
   return (
     <div className="container">
       <div className="login-card">
         <div className="left_container">
-          
+
           <h2>Welcome to</h2>
           <h1>CloudBooks</h1>
           <p>
@@ -24,7 +30,7 @@ function UserLogin() {
           </p>
         </div>
         <div className="right_container">
-         
+
           <form onSubmit={handleSubmit}>
             <div className="input-group">
               <label>Email Address</label>
@@ -43,7 +49,7 @@ function UserLogin() {
                 type="password"
                 placeholder="Enter your password"
                 value={password}
-                onChange={(e)=>setPassword(e.target.value)}
+                onChange={(e) => setPassword(e.target.value)}
                 autoComplete='password'
                 required
               />
@@ -52,11 +58,11 @@ function UserLogin() {
               <label>
                 <input type="checkbox" /> Remember me
               </label>
-              <a href="#">Forgot password?</a>
+              <Link to='/user/forgetpassword'>Forgot password?</Link>
             </div>
             <button type="submit" className="btn">Sign In</button>
             <div className="signup">
-              <p>Don't have an account? <a href="#" className="sign-link">Sign up</a></p>
+             <p>Don't have an account? <Link to='/user_reg' className='sign-link'> sign up</Link></p>
             </div>
 
           </form>

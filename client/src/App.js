@@ -6,27 +6,40 @@ import UserRegistration from './Components/User/UserRegistration';
 import UserDashboard from './Components/User/UserDashboard';
 import UserResetpassword from './Components/User/UserResetpassword';
 import UserForgetpassword from './Components/User/UserForgetpassword';
+import { BrowserRouter ,Routes, Route} from 'react-router-dom';
+import AdminDashboard from './Components/Admin/AdminDashboard';
 
 
 function App() {
   return (
     <div className="App">
 
- {/* user */}
+<BrowserRouter>
 
-      {/* <UserLogin/> */}
-      {/* <UserRegistration/> */}
-      {/* <UserDashboard/> */}
-      {/* <UserResetpassword/> */}
-      {/* <UserForgetpassword /> */}
+<Routes>
+  <Route path='/' element={<UserLogin />} />
+  <Route path='/user_reg' element={<UserRegistration />} />
+  <Route path='/user/dashboard' element={<UserDashboard/>}/>
+  <Route path='/user/restpassword' element={<UserResetpassword/>}/>
+  <Route path='/user/forgetpassword' element={<UserForgetpassword />}/>
+</Routes>
+
+<Routes>
+  <Route path='admin' element={ <AdminLogin/> }/>
+  <Route path='admin/dashboard' element={<AdminDashboard/>}/>
+</Routes>
+
 
       
-   {/* Admin */}
+      
 
-      {/* <AdminLogin/> */}
-      {/* <AdminDashboard/>  */}
+      
 
 
+     
+      
+
+      </BrowserRouter>
     </div>
   );
 }
