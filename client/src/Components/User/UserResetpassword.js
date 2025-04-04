@@ -1,9 +1,9 @@
 import React from 'react'
-import '../../Assets/Styles/Adminstyles/AdminResetpassword.css'
+import '../../Assets/Styles/Userstyles/UserResetpassword.css'
 
-function AdminResetpassword() {
+function UserResetpassword() {
   return (
-
+    <div>
         <div className="container">
       <div className="reset-card">
         <h2 className="title">Reset Password</h2>
@@ -20,8 +20,8 @@ function AdminResetpassword() {
         </form>
       </div>
     </div>
-
+    </div>
   )
 }
 
-export default AdminResetpassword
+export default UserResetpassword
