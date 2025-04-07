@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../Assets/Styles/Adminstyles/AdminLogin.css'
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -13,9 +14,7 @@ function AdminLogin() {
     <div class="container">
       <div class="login-card">
         <div class="left_container">
-          <div class="logo">
-
-          </div>
+    
           <h2>Welcome to</h2>
           <h1>CloudBooks</h1>
           <p>
@@ -42,7 +41,7 @@ function AdminLogin() {
                 required
               />
             </div>
-            <button type="submit" class="btn">Sign In</button>
+            <Link to ="/admin/dashboard" ><button type="submit" class="btn">Sign In</button></Link>
 
           </form>
 

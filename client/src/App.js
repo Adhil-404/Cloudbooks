@@ -8,7 +8,11 @@ import UserResetpassword from './Components/User/UserResetpassword';
 import UserForgetpassword from './Components/User/UserForgetpassword';
 import { BrowserRouter ,Routes, Route} from 'react-router-dom';
 import AdminDashboard from './Components/Admin/AdminDashboard';
+
 import Homepage from './Components/User/Homepage';
+
+import AdminBooks from './Components/Admin/AdminBooks';
+
 
 
 function App() {
@@ -25,10 +29,11 @@ function App() {
   <Route path='/user/forgetpassword' element={<UserForgetpassword />}/>
   <Route path='/user/homepage' element={<Homepage/>}/>
 </Routes>
-
 <Routes>
   <Route path='admin' element={ <AdminLogin/> }/>
   <Route path='admin/dashboard' element={<AdminDashboard/>}/>
+  <Route path='admin/books' element={<AdminBooks/>}/>
+
 </Routes>
 
 
