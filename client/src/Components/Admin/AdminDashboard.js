@@ -2,6 +2,7 @@
 
 import React from "react";
 import '../../Assets/Styles/Adminstyles/AdminDashboard.css';
+import { Link } from "react-router-dom";
 
 function AdminDashboard() {
   return (
@@ -11,12 +12,12 @@ function AdminDashboard() {
 
       <aside className="admindash-sidebar">
         <ul className="admindash-nav-links">
-          <li className="admindash-active">Dashboard</li>
-          <li>Books</li>
-          <li>Orders</li>
-          <li>Users</li>
-          <li>Reviews</li>
-          <li>Settings</li>
+          <li><Link to="/admin/dashboard">Dashboard</Link></li>
+          <li><Link to="/admin/books">Books</Link></li>
+          <li><Link to="/admin/orders">Orders</Link></li>
+          <li><Link to="/admin/users">Users</Link></li>
+          <li><Link to="/admin/reviews">Reviews</Link></li>
+          <li><Link to="/admin/settings">Settings</Link></li>
         </ul>
       </aside>
 

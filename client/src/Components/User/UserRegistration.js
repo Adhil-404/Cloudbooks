@@ -1,11 +1,13 @@
-import React, { useState } from 'react'
-import "../../Assets/Styles/Userstyles/UserRegistration.css"
-
+import React, { useState } from 'react';
+import "../../Assets/Styles/Userstyles/UserRegistration.css";
 
 function UserRegistration() {
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
+    phone: '',
+    dob: '',
+    gender: '',
     password: '',
     confirmPassword: '',
   });
@@ -22,12 +24,11 @@ function UserRegistration() {
       return;
     }
 
-    
     console.log('Form submitted:', formData);
   };
+
   return (
-    <div>
-       <div className="signup-container">
+    <div className="signup-container">
       <div className="signup-card">
         <h2>Create Your CloudBooks Account</h2>
         <form onSubmit={handleSubmit}>
@@ -56,6 +57,42 @@ function UserRegistration() {
           </div>
 
           <div className="input-group">
+            <label>Phone Number</label>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="123-456-7890"
+              value={formData.phone}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="input-group">
+            <label>Date of Birth</label>
+            <input
+              type="date"
+              name="dob"
+              value={formData.dob}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="input-group">
+            <label>Gender</label>
+            <select
+              name="gender"
+              value={formData.gender}
+              onChange={handleChange}
+            >
+              <option value="">Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+              <option value="preferNotToSay">Prefer not to say</option>
+            </select>
+          </div>
+
+          <div className="input-group">
             <label>Password</label>
             <input
               type="password"
@@ -79,17 +116,15 @@ function UserRegistration() {
             />
           </div>
 
-          <button type="submit" className="btn">Sign Up</button>
+          <button type="submit" className="UserReg_btn">Sign Up</button>
 
-          <p className="login-link">
+          <p className="UserReg_login-link">
             Already have an account? <a href="#">Login here</a>
           </p>
         </form>
       </div>
     </div>
-  
-    </div>
-  )
+  );
 }
 
-export default UserRegistration
+export default UserRegistration;
