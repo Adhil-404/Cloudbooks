@@ -97,7 +97,7 @@ function UserRegistration() {
             <input
               type="password"
               name="password"
-              placeholder="••••••••"
+              placeholder=""
               value={formData.password}
               onChange={handleChange}
               required
@@ -109,7 +109,7 @@ function UserRegistration() {
             <input
               type="password"
               name="confirmPassword"
-              placeholder="••••••••"
+              placeholder=""
               value={formData.confirmPassword}
               onChange={handleChange}
               required
